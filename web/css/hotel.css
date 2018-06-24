@@ -1,0 +1,297 @@
+html { margin:0; padding:0; height:100% ;}
+.h1{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+    font:15px/1.5 Arial,Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #fefefe;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header
+{
+    color:#f1f1f1;
+    /*padding-top: 5px;*/
+    background: #209CEE;
+
+    min-height: 45px;
+
+}
+header a{
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+    font-family: inherit;
+
+}
+header ul{
+  margin:0;
+  padding: 0
+}
+header li{
+  float: left;
+  display: inline;
+  padding:0 30px 0 30px;
+}
+header #branding{
+  float: left;
+}
+header nav{
+  float: right;
+  margin-top: 2em;
+}
+header a:hover{
+  font-weight: bold;
+  color: black;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.restaurant-container
+{
+    width: 90%;
+    margin: 0 auto;
+}
+#restaurantshow{
+
+    height: 50vh;
+    background-color: #35424a;
+    position: relative;
+    
+}
+#restaurantshow span
+{
+    float: right;
+}
+#restaurantshow h3
+{
+    margin-top: 35px;
+    display: inline;
+  font-size: 35px;
+    color:  white; 
+}
+#restaurantshow p1
+{
+    display: inline;
+    font-size: 25px;
+    color:  white;
+    
+} 
+#restaurantshow h4
+{
+    
+    color: white;
+   
+}
+#restaurantshow h5
+{
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 75px;
+    color: white;
+  font-size: 15px;
+    
+    font-weight: 0;
+    
+}
+#restaurantshow h6
+{
+    display: inline;
+    padding-top: 30px;
+    margin-right: 100px;
+     color: white;
+  font-size: 15px;
+}
+#restaurantshow h7
+{
+    display: inline;
+     color: white;
+  font-size: 15px;
+}
+#restaurantshow h8
+{
+    display: inline;
+     color: white;
+  font-size: 15px;
+}
+
+#restaurantshow form
+{
+    float: right;  
+    margin-top: 40px;
+    
+   
+    
+}
+#restaurantshow input
+{
+        padding: 10px;
+        height: 25px;
+        width: 250px;
+        font-size: 15px;
+        border-radius: 3px;
+        border: 0;
+}
+#restaurantshow button
+{
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: bold;
+    background:  #4285f4;
+    padding: 13px 50px;
+    border-radius: 3px;
+    border: 0;
+    text-transform: uppercase;
+
+}
+#restaurantshow button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+#tabbedmenu h1
+{
+    color:cadetblue;
+    padding-top: 10px;
+    text-align: center;
+
+    min-height: 45px;
+
+}
+#tabbedmenu h1:hover{
+  font-weight: bold;
+  color: black;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+#tabbedmenu
+{
+
+    /*position: relative;*/
+}
+.aside-class
+{
+    background: #fefefe;
+    margin-top: 2em;
+    position: inline;
+    margin-left: 5px;
+    /*box-shadow: 2px 2px 15px 6px #888888;*/
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    width: 20%;
+    float: left;
+    border-right:1px  grey solid;
+}
+
+
+#tabbedmenu a
+{
+    text-decoration: none;
+    
+}
+
+#tabbedmenu  li{
+ padding: inherit;
+ /* display: inline;*/
+    list-style-type: none;
+    
+    font-family: inherit;
+   font-color:#DEB887;
+    font-size: 16px;
+    font-weight: bold;
+}
+#tabbedmenu  li:hover{
+    border-right: 2px red solid;
+}
+#tabbedmenu nav
+{ 
+    
+    margin-left:0;
+      overflow: hidden;
+    color: aqua;
+ 
+}
+#tabbedmenu a:hover
+{
+color: red;
+    
+}
+
+
+
+
+footer
+{
+    bottom:1;
+    
+    position: absolute;
+    width: 100%;
+   
+    
+    
+}
+.footergsn
+{
+    
+    font: 20px/1.5 Arial;
+	color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 26px;
+    padding-right: 0;
+    padding-left: 0;
+	min-height: 40px;
+	text-align:center;
+	background-color: #209CEE;
+}
+
+
+/*------Restaurant page -----*/
+#restro-article
+{
+    float: right; 
+    display: inline;
+  border: 0;
+    outline: 0;
+    margin: 2em 1em;
+    width: 75%;
+}
+
+.section3
+{
+    display: block;
+    min-height: 50vh;
+}
+
+.restro-content
+{
+    
+    display: block;
+  
+}
+.row
+{
+    padding: 3em;
+    background: #fefefe;
+    border-bottom: 1px grey solid;
+}
+.col1
+{
+    display: inline;
+    float: right;
+    
+}
+.col2
+{
+    display: inline;
+    float: left;
+}

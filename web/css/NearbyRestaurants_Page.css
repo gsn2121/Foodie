@@ -1,0 +1,474 @@
+/*Global*/
+/*header,footer {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+
+}*/
+/*global*/
+html 
+{ 
+    margin:0; 
+    padding:0; 
+    height:100% ;
+}
+.h1{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+    font:15px/1.5 Arial,Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #e0ffff;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header
+{
+    color:#f1f1f1;
+    /*padding-top: 5px;*/
+    background: #1E90FF;
+    min-height: 45px;
+}
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: inherit;
+
+}
+header ul{
+  margin:0;
+  padding: 0
+}
+header li{
+  float: left;
+  display: inline;
+  padding:0 30px 0 30px;
+}
+header #branding{
+  float: left;
+}
+.brandspan
+{
+    color:		#FFFF00;
+}
+header nav{
+  float: right;
+  margin-top: 2em;
+}
+header a:hover{
+    font-weight: bold;
+    color:	#FFFF00;
+    cursor: pointer;
+    border-bottom: 2px solid 	#FFFF00;
+    padding-bottom: 5px;
+}
+
+#showcase
+{
+
+min-height: 90vh;
+background-image: url('../img/food-eating-potatoes-beer-8313.jpg');0 -400px;
+background-size: cover;
+position: relative;
+
+}
+.location
+{
+    position: absolute;
+    margin-top: 20em;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 15em;
+    width: 80%;
+}
+.formclass
+{
+    margin: 0 8em;
+}
+.location input
+{
+        padding: 10px;
+        height: 25px;
+        width: 250px;
+        font-size: 20px;
+        margin: 0 2px 0 0;
+        border-radius: 5px;
+        border: 0;
+        font-style: normal;
+    
+}
+.button1{
+    font-family: inherit;
+    height: 45px;
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: bold;
+    background:  #4285f4;
+    padding: 12px 50px;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+
+}
+.button1:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+    border-bottom: 2px solid #FF4500;
+}
+
+footer
+{
+    display: grid;
+    bottom: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #1E90FF;
+    grid-template-rows: 1fr 2fr;
+}
+.footergsn
+{
+    font: 22px/1.5 Arial;
+	color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
+	text-align:center;
+	
+}
+.footergsn h3
+{
+    margin: 1em 0 0 0;
+    padding: 5px;
+}
+.footergsn p
+{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.footernav
+{
+    border-top: 1px solid #B0C4DE;
+    width: 70%;
+    margin: 1em auto;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fefefe;
+    
+}
+.col
+{
+    margin-top: 1em;
+    text-align: center;
+}
+.col h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.col nav
+{
+    text-decoration: none;
+}
+.col ul{
+    padding: 0;
+}
+.col li
+{
+    padding: 5px 0;
+    list-style: none;
+}
+.col a
+{
+     color:white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.col a:hover
+{
+    font-weight: bold;
+}
+.col img:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+
+/*---------------------------Page Menu Image----------------------------*/
+#cartimg
+{
+    margin: -5px 0;
+    padding-right: 5px;
+}
+
+#locationimg
+{
+    margin: -5px 0;
+    padding-bottom: 5px;
+    
+}
+#locationimg:hover{
+    content:url("../img/location-black.png");
+}
+
+
+
+
+/*-----------------------page Styling--------------------------*/
+#tabbedmenu h1
+{
+    color:cadetblue;
+    padding-top: 10px;
+    text-align: center;
+    min-height: 45px;
+}
+#tabbedmenu h1:hover{
+  font-weight: bold;
+  color: black;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.aside-class
+{
+    background: #fefefe;
+    margin-top: 2em;
+    position: absolute;
+    box-shadow: 2px 2px 15px 6px #888888;
+    border-radius: 4px;
+    border: 0;
+    width: 20%;
+    float: left;
+}
+#tabbedmenu a
+{
+    text-decoration: none;   
+}
+
+#tabbedmenu  li{
+ padding: inherit;
+ /* display: inline;*/
+    list-style-type: none;
+    
+    font-family: inherit;
+   font-color:#DEB887;
+    font-size: 16px;
+    font-weight: bold;
+}
+#tabbedmenu nav
+{ 
+    
+    margin-left:0;
+      overflow: hidden;
+    color: aqua;
+ 
+}
+#tabbedmenu a:hover
+{
+color: red;
+      
+
+}
+@keyframes slider
+{
+    0%{
+       left:0;
+    }
+    20%
+    {
+        left:0;
+    }
+    25%
+    {
+        left:-100%
+    }
+    45%
+    {
+        left:-100%
+    }
+    50%
+    {
+        left:-200%
+    }
+70%
+{
+    left:-200%
+}
+75%
+{
+    left:-300%
+}
+95%
+{
+    left:-300%
+}
+100%
+{
+    left:-400%
+}
+
+}
+#slider
+{
+    
+    overflow:hidden;
+    height: 50vh;
+    background: #35424a;
+    
+}
+    
+
+#slider figure img
+{
+     
+   
+    width: 20%;
+    float:left;
+    
+}
+#slider figure
+{
+    
+    position: relative;
+    width:700%;
+    margin:0;
+    min-height: 200em;
+    left:0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slider infinite;
+}
+#search {
+    
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;}
+#search form
+{
+    float: right;
+    margin-top: 15px;
+    
+    
+    
+}
+#search input
+{
+      padding: 10px;
+  height: 25px;
+  width: 250px;
+  font-size: 15px;
+    margin: 0 2px 0 0;
+    border-radius: 3px;
+    border: 0;
+}
+#search button
+{
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: bold;
+    background:  #4285f4;
+    padding: 13px 50px;
+    border-radius: 3px;
+    border: 0;
+    text-transform: uppercase;
+    
+    
+}
+#search h1{
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 30px;
+    margin-left: 0;
+    font-family: monospace;
+    color: orange;
+    border: 0;
+    margin-top: 15px;
+}
+#search button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+
+/*------------------Card Section----------------*/
+.section3 
+{
+    display: block;
+    min-height: 50vh;
+}
+/*------category menu left side------*/
+.section3 aside
+{
+    float: left;
+}
+/*--------article class to shift it right----*/
+.cardboxcontainer
+{
+    margin-top: 1em;
+    float: right;
+    display: inline;
+    width: 70%;
+    height: inherit;
+}
+
+
+/*------Single card design in article tag----*/
+.card {
+    background: #f0fff0;
+    margin: 5px;
+    
+    display: inline-block;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 4px;
+    height: 250px;
+}
+.card h4
+{
+    margin: 0;
+    padding: 0;
+}
+.card img
+{
+    
+    height: 100px;
+    width:95%;
+    margin: 3px 3px;
+    border-radius: 4px;
+    box-shadow: 3px 8px 5px 0 grey;
+}
+.card:hover 
+{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/*------contain the content in the box excluding the img----*/
+.container1 {
+    padding: 2px 10px;
+}
+
+/*----class defined for row designing ---*/
+.cardsection
+{
+    margin: 2em auto;
+}

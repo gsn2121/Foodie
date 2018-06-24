@@ -1,0 +1,176 @@
+html { margin:0; padding:0; height:100% ;}
+.h1{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+    font:15px/1.5 Arial,Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #e0ffff;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header
+{
+    color:#f1f1f1;
+    /*padding-top: 5px;*/
+    background: #209CEE;
+
+    min-height: 45px;
+
+}
+header a{
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+    font-family: inherit;
+
+}
+header ul{
+  margin:0;
+  padding: 0
+}
+header li{
+  float: left;
+  display: inline;
+  padding:0 30px 0 30px;
+}
+header #branding{
+  float: left;
+}
+header nav{
+  float: right;
+  margin-top: 2em;
+}
+header a:hover{
+  font-weight: bold;
+  color: black;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+#passshowcase
+{
+display: block;
+height: 500px;
+background-image: url('../img/food-eating-potatoes-beer-8313.jpg');0 -400px;
+background-size: cover;
+position: relative;
+
+}
+footer
+{
+    
+    bottom: 1;
+    position: absolute;
+    width: 100%;
+    margin: -2em 0 0 0;
+}
+.footergsn
+{
+
+    font: 20px/1.5 Arial;
+	color: #FFFFFF;
+    padding top: 30px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    padding-left: 0;
+	min-height: 40px;
+	text-align:center;
+	background-color: #209CEE;
+}
+/*---------------page password code-------------------------------------------*/
+.box1
+{
+     
+    /*vertical-align: middle;*/
+    /*width: 30%;*/
+    /*border: 1px solid;*/
+    /*margin: 10em auto;
+    margin: 10em 30em 10em 30em;*/
+    background: #fefefe;
+    box-shadow: 2px 2px 15px 6px #888888;
+    border-radius: 4px;
+    border: 0;
+    align-content: center;
+    width: 30%;
+    position: absolute;
+  margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    margin-right: 20%;  
+
+}
+
+.box1-content
+{
+    align-content: center;
+    padding: 5px 0px;
+    margin-left: 10%;
+    width: 90%;
+    position: inherit;
+    margin: 2em auto;
+}
+.box1-content input[type="text"]
+{
+    border:0;
+   outline: 0;
+border-radius: 3px;
+    /*width: 90%;*/
+    width: 80%;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px 5px;
+    
+   
+}
+.box1-content input[type="text"]:hover
+{
+border-bottom: 1px red solid;
+    
+}
+
+.submit :hover{
+     opacity: 0.8;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    
+}
+#passshowcase button
+{
+    position: inherit;
+    padding: 10px 10px;
+    width: 90%;
+    margin: 1em 1em;
+    font-size: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #4285f4;
+    color: #f1f1f1;
+}
+#passshowcase button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.titledpass h2
+{
+    color: teal;
+text-align: center; 
+   
+    font: 15px;
+}
+.titledpass h2:hover
+{
+    border-bottom: 2px solid grey;
+}

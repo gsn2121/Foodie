@@ -1,0 +1,269 @@
+/*Global*/
+/*header,footer {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+
+}*/
+/*global*/
+html 
+{ 
+    margin:0; 
+    padding:0; 
+    height:100% ;
+}
+.h1{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+    font:15px/1.5 Arial,Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #e0ffff;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header
+{
+    color:#f1f1f1;
+    /*padding-top: 5px;*/
+    background: #1E90FF;
+    min-height: 45px;
+}
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: inherit;
+
+}
+header ul{
+  margin:0;
+  padding: 0
+}
+header li{
+  float: left;
+  display: inline;
+  padding:0 30px 0 30px;
+}
+header #branding{
+  float: left;
+}
+.brandspan
+{
+    color:		#FFFF00;
+}
+header nav{
+  float: right;
+  margin-top: 2em;
+}
+header a:hover{
+    font-weight: bold;
+    color:	#FFFF00;
+    cursor: pointer;
+    border-bottom: 2px solid 	#FFFF00;
+    padding-bottom: 5px;
+}
+
+#showcase
+{
+
+min-height: 90vh;
+background-image: url('../img/food-eating-potatoes-beer-8313.jpg');0 -400px;
+background-size: cover;
+position: relative;
+
+}
+.location
+{
+    position: absolute;
+    margin-top: 20em;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 15em;
+    width: 80%;
+}
+.formclass
+{
+    margin: 0 8em;
+}
+.location input
+{
+        padding: 10px;
+        height: 25px;
+        width: 250px;
+        font-size: 20px;
+        margin: 0 2px 0 0;
+        border-radius: 5px;
+        border: 0;
+        font-style: normal;
+    
+}
+.button1{
+    font-family: inherit;
+    height: 45px;
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: bold;
+    background:  #4285f4;
+    padding: 12px 50px;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+
+}
+.button1:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+    border-bottom: 2px solid #FF4500;
+}
+
+footer
+{
+    display: grid;
+    bottom: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #1E90FF;
+    grid-template-rows: 1fr 2fr;
+}
+.footergsn
+{
+    font: 22px/1.5 Arial;
+	color: #FFFFFF;
+    padding top: 20px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
+	text-align:center;
+	
+}
+.footergsn h3
+{
+    margin: 1em 0 0 0;
+    padding: 5px;
+}
+.footergsn p
+{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.footernav
+{
+    border-top: 1px solid #B0C4DE;
+    width: 70%;
+    margin: 1em auto;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fefefe;
+    
+}
+.col
+{
+    margin-top: 1em;
+    text-align: center;
+}
+.col h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.col nav
+{
+    text-decoration: none;
+}
+.col ul{
+    padding: 0;
+}
+.col li
+{
+    padding: 5px 0;
+    list-style: none;
+}
+.col a
+{
+     color:white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.col a:hover
+{
+    font-weight: bold;
+}
+.col img:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+/*-----------------------------Page Menu Image--------------------------*/
+#cartimg
+{
+    margin: -5px 0;
+    padding-right: 5px;
+}
+
+#locationimg
+{
+    margin: -5px 0;
+    padding-bottom: 5px;
+    
+}
+#locationimg:hover{
+    content:url("../img/location-black.png");
+}
+
+
+
+/*------------------------------Cart Page-------------------------------*/
+
+#cartsection
+{
+    min-height: 100vh;
+}
+.cart-content
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 1em;
+}
+/*----total box right side-----*/
+.total-box
+{
+    margin-top: 2em;
+    width: 90%;
+    box-shadow: 2px 2px 5px 5px #888888;
+    border-radius: 5px;
+    min-height: 200px;
+}
+/*------sign up Or address box-----*/
+.profile-box
+{
+    width: 90%;
+    box-shadow: 2px 2px 5px 5px #888888;
+    border-radius: 5px;
+    height: 200px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.cart-row
+{
+    width: 95%;
+    margin: 2em auto;
+    min-height: 100px;
+    box-shadow: 2px 2px 5px 5px #888888;
+    border-radius: 5px;
+}

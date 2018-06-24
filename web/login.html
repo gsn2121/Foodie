@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width,intial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./css/login.css">
+           
+
+     <title>Foodie | Login</title>
+    </head>
+<body>
+    <header >
+             <div class="container">
+			            <div id="branding">
+			                 <h1><span class="brandspan">Foodie</span> | The Hunger Killer</h1>
+                        </div>
+                        <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="signup.html">Signup</a></li>
+                                </ul>
+                        </nav>
+              </div>
+        </header>
+        <section id="signupshowcase" style="display: block;">
+             <div class="box container">
+                 <div class="titlediv">
+                    <h2>LOGIN</h2>
+                </div>
+                
+                <form action="#">
+                    <div class="box-content" >
+    
+                        <div class="div-icon" id="emaildiv">
+                        <span><img class="icon" src="./img/icons/email.png"/></span>
+                        <input class="" id="email" type="email" placeholder="Email" autofocus="true" required="required" onchange="ValidEmail()">
+                        <span><img class="tick" id="tickE" src="img/tick.png"/></span>
+                        </div>
+                         
+                    </div>
+        
+                    <div class="box-content">
+                        <div class="div-icon" id="pass2div">
+                        <span><img class="icon" src="./img/icons/key.png"/></span>
+                        <input class="" required="required" type="password" id="pass" placeholder="Confirm Password" onchange="ValidPass()">
+                        <span><img class="tick" id="tickP2" src=""/></span>
+                    </div>
+                    </div>
+                    
+                    <div class="box-content">
+                        <input class="submit-button" type="submit" onclick="return flagcheck('login');" value="Log In"/>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            <a href="pass.html">Forgot Password</a>
+                        </p>
+                    </div>
+              
+                    </form>
+            </div>
+            
+        </section>
+          <footer>
+            <div class="footergsn container">
+                <h3> Foodie&trade; 2018</h3>
+                <p>All Copyrights Reserved</p>
+            </div>
+            <div class="footernav container">
+                <div class="col">
+                    <h3>Company</h3>
+                    <nav>
+                                <ul>
+                                    <li><a href="login.html">About us</a></li>
+                                    <li><a href="signup.html">Contact US</a></li>
+                                    <li><a href="signup.html">Partner With Us</a></li>
+                                </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <h3>Legal</h3>
+                    <nav>
+                                <ul>
+                                    <li><a href="login.html">Terms and Condition</a></li>
+                                    <li><a href="signup.html">Refund & Cancellation</a></li>
+                                    <li><a href="signup.html">Customer Care</a></li>
+                                    <li><a href="signup.html">FAQ</a></li>
+                                </ul>
+                    </nav>
+                
+                </div>
+                <div class="col">
+                    <nav>
+                                <ul>
+                                    <li><a href="login.html"><img src="img/icons/fb.png" height="30px" width="30px" alt="FaceBook"></a></li>
+                                    <li><a href="signup.html"><img src="img/icons/insta.png" alt="Instagram" height="30px" width="30px"></a></li>
+                                    <li><a href="signup.html"><img src="img/icons/twitter.png" alt="Twitter" height="30px" width="30px"></a></li>
+                                </ul>
+                    </nav>
+                
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./js/gsn.js"></script>
+    
+    </html>
