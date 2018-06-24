@@ -39,21 +39,21 @@
                 <div class="box-content">
                     <div class="div-icon">
                         <span><img class="icon" src="./img/icons/avatar.png"/></span>
-                        <input class=""  id="name"type="text" required="required" placeholder="Name" autofocus="" >
+                        <input name="name"  id="name" type="text" required="required" placeholder="Name" autofocus="" >
                         <span><img class="tick" src=""/></span>
                     </div>
                 </div>
                 <div class="box-content">
                     <div class="div-icon" id="mobdiv">
                         <span><img class="icon" src="./img/icons/mob-icon.png"/></span>
-                        <input class="" type="text" id="mob" placeholder="Mob No." autofocus="" required="required" onchange="ValidMob()"/>
+                        <input name="mob" type="text" id="mob" placeholder="Mob No." autofocus="" required="required" onchange="ValidMob()"/>
                         <span><img class="tick" id="tickM" src=""/></span>
                     </div>
                  </div>
                  <div class="box-content">
                      <div class="div-icon" id="pass1div">
                         <span><img class="icon" src="./img/icons/key.png"/></span>
-                         <input class="" required="required" type="password" id="pass1" placeholder="Password" />
+                         <input name="pass1" required="required" type="password" id="pass1" placeholder="Password" />
                          <span><img class="tick" id="tickP1" src=""/></span>
                      </div>
                  </div>
@@ -69,7 +69,7 @@
                 </div>
             </form>
         </div>
-          <% String message = (String)request.getAttribute("alertMsg");%>
+          
       </section>
         <footer>
             <div class="footergsn container">
@@ -111,8 +111,7 @@
                 </div>
             </div>
         </footer>
+        <input type="hidden" id="alert" value="${sessionScope.alertMsg}"/>
     </body>
 <script src="./js/gsn.js"></script>
-
-
 </html>
