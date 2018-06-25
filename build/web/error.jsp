@@ -6,7 +6,7 @@
       <link rel="stylesheet" type="text/css" href="./css/error.css">
        <meta http-equiv="refresh" content="10; URL=index.jsp">
       <meta name="keywords" content="automatic redirection">
-           
+      <title>Error</title>
    </head>
     <body>
         <div class="container">
