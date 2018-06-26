@@ -6,7 +6,8 @@
 <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <sql:setDataSource user="root" password="password" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/foodie1"/>
-<sql:query var="res" sql="select * from restaurant_detail where restaurant_city='${sessionScope.getCity}'" />
+<%--<sql:query var="res" sql="select * from restaurant_detail where restaurant_city='${sessionScope.getCity}'" />--%>
+<sql:query var="rr" sql="SELECT * FROM menu WHERE rid in [select rid from restaurant_detail where restaurant_city='Jabalpur']"/>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -71,12 +72,14 @@
                 </div>
             </aside>
             <article class="cardboxcontainer">
-               <core:forEach items="${res.rows}"  var="e">
-                       <sql:query var="menu_query" sql="SELECT * FROM menu WHERE rid='${e.rid}'"/>
+                <%--<core:forEach items="${res.rows}"  var="e">--%>
+                        <%--<sql:query var="menu_query" sql="SELECT * FROM menu WHERE rid='${e.rid}'"/>
                         <sql:query var="res_name" sql="SELECT name FROM RESTAURANT WHERE rid='${e.rid}'"/>
                             
                             <core:set var="limit" value="${menu_query.rowCount}"/>
-                                <core:forEach var="j" items="${menu_query.rows}">
+                                <core:forEach var="j" items="${menu_query.rows}">--%>
+                        <core:forEach var="j" items="${rr.rows}">
+                                <sql:query var="res_name" sql="SELECT name FROM RESTAURANT WHERE rid='${j.rid}'"/>
                                 <%! int i=0; %>
                                 <% if(i>4){ %>
                                  <div class="cardsection">
@@ -108,7 +111,7 @@
                                         </div>
                                         
                                         <%}%>
-                                </core:forEach>
+                                
                              </core:forEach> 
                <div style="clear:both"></div>
                         </article>
